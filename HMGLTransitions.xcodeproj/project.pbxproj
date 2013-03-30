@@ -15,6 +15,13 @@
 		2899E5220DE3E06400AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* RootViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* RootViewController.m */; };
+		4AB3F9AB170768C200B19B78 /* HMGLTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9AA170768C200B19B78 /* HMGLTransitionSegue.m */; };
+		4AB3F9AD17076A8700B19B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB3F9AC17076A8700B19B78 /* Main.storyboard */; };
+		4AB3F9B01707728F00B19B78 /* HMGLDoorsTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9AF1707728E00B19B78 /* HMGLDoorsTransitionSegue.m */; };
+		4AB3F9B3170772D000B19B78 /* HMGLClothTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9B2170772D000B19B78 /* HMGLClothTransitionSegue.m */; };
+		4AB3F9B61707733500B19B78 /* HMGLRotateTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9B51707733400B19B78 /* HMGLRotateTransitionSegue.m */; };
+		4AB3F9B91707736900B19B78 /* HMGLFlipTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9B81707736900B19B78 /* HMGLFlipTransitionSegue.m */; };
+		4AB3F9BC1707739500B19B78 /* HMGLSwitch3DTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9BB1707739400B19B78 /* HMGLSwitch3DTransitionSegue.m */; };
 		55F884E3142A0B47008F9C14 /* MainWindow~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F884E2142A0B47008F9C14 /* MainWindow~ipad.xib */; };
 		AC13782B124ECCD800D21E3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC13782A124ECCD800D21E3F /* QuartzCore.framework */; };
 		AC137831124ECCDC00D21E3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC137830124ECCDC00D21E3F /* OpenGLES.framework */; };
@@ -45,10 +52,23 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = RootViewController.h; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HMGLTransitions_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitions_Prefix.pch; sourceTree = "<group>"; };
+		4AB3F9A9170768C200B19B78 /* HMGLTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionSegue.h; sourceTree = "<group>"; };
+		4AB3F9AA170768C200B19B78 /* HMGLTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionSegue.m; sourceTree = "<group>"; };
+		4AB3F9AC17076A8700B19B78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4AB3F9AE1707728E00B19B78 /* HMGLDoorsTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLDoorsTransitionSegue.h; sourceTree = "<group>"; };
+		4AB3F9AF1707728E00B19B78 /* HMGLDoorsTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLDoorsTransitionSegue.m; sourceTree = "<group>"; };
+		4AB3F9B1170772D000B19B78 /* HMGLClothTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLClothTransitionSegue.h; sourceTree = "<group>"; };
+		4AB3F9B2170772D000B19B78 /* HMGLClothTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLClothTransitionSegue.m; sourceTree = "<group>"; };
+		4AB3F9B41707733400B19B78 /* HMGLRotateTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLRotateTransitionSegue.h; sourceTree = "<group>"; };
+		4AB3F9B51707733400B19B78 /* HMGLRotateTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLRotateTransitionSegue.m; sourceTree = "<group>"; };
+		4AB3F9B71707736900B19B78 /* HMGLFlipTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLFlipTransitionSegue.h; sourceTree = "<group>"; };
+		4AB3F9B81707736900B19B78 /* HMGLFlipTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLFlipTransitionSegue.m; sourceTree = "<group>"; };
+		4AB3F9BA1707739400B19B78 /* HMGLSwitch3DTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLSwitch3DTransitionSegue.h; sourceTree = "<group>"; };
+		4AB3F9BB1707739400B19B78 /* HMGLSwitch3DTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLSwitch3DTransitionSegue.m; sourceTree = "<group>"; };
 		55F884E2142A0B47008F9C14 /* MainWindow~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow~ipad.xib"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HMGLTransitions-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HMGLTransitions-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AC13782A124ECCD800D21E3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -65,7 +85,7 @@
 		AC137926124ED75E00D21E3F /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
 		AC169A71124FCD72008F43EA /* RotateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateTransition.h; sourceTree = "<group>"; };
 		AC169A72124FCD72008F43EA /* RotateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateTransition.m; sourceTree = "<group>"; };
-		AC169B0E124FD5FC008F43EA /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ModalViewController.h; sourceTree = "<group>"; };
+		AC169B0E124FD5FC008F43EA /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		AC169B0F124FD5FC008F43EA /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		AC169B10124FD5FC008F43EA /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ModalViewController.xib; path = Classes/ModalViewController.xib; sourceTree = "<group>"; };
 		AC169B6A124FE159008F43EA /* HMLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HMLogo.png; sourceTree = "<group>"; };
@@ -153,16 +173,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4AB3F9BD170773B500B19B78 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				4AB3F9AE1707728E00B19B78 /* HMGLDoorsTransitionSegue.h */,
+				4AB3F9AF1707728E00B19B78 /* HMGLDoorsTransitionSegue.m */,
+				4AB3F9B1170772D000B19B78 /* HMGLClothTransitionSegue.h */,
+				4AB3F9B2170772D000B19B78 /* HMGLClothTransitionSegue.m */,
+				4AB3F9B41707733400B19B78 /* HMGLRotateTransitionSegue.h */,
+				4AB3F9B51707733400B19B78 /* HMGLRotateTransitionSegue.m */,
+				4AB3F9B71707736900B19B78 /* HMGLFlipTransitionSegue.h */,
+				4AB3F9B81707736900B19B78 /* HMGLFlipTransitionSegue.m */,
+				4AB3F9BA1707739400B19B78 /* HMGLSwitch3DTransitionSegue.h */,
+				4AB3F9BB1707739400B19B78 /* HMGLSwitch3DTransitionSegue.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
 		AC13783A124ECD2B00D21E3F /* HMGLTransitions */ = {
 			isa = PBXGroup;
 			children = (
 				AC169A74124FCD7C008F43EA /* Transitions */,
+				4AB3F9BD170773B500B19B78 /* Segues */,
 				AC13783B124ECD2B00D21E3F /* HMGLTransition.h */,
 				AC13783C124ECD2B00D21E3F /* HMGLTransition.m */,
 				AC137841124ECD2B00D21E3F /* HMGLTransitionView.h */,
 				AC137842124ECD2B00D21E3F /* HMGLTransitionView.m */,
 				AC13783D124ECD2B00D21E3F /* HMGLTransitionManager.h */,
 				AC13783E124ECD2B00D21E3F /* HMGLTransitionManager.m */,
+				4AB3F9A9170768C200B19B78 /* HMGLTransitionSegue.h */,
+				4AB3F9AA170768C200B19B78 /* HMGLTransitionSegue.m */,
 			);
 			path = HMGLTransitions;
 			sourceTree = "<group>";
@@ -203,6 +243,7 @@
 				AC169B10124FD5FC008F43EA /* ModalViewController.xib */,
 				2899E5210DE3E06400AC0155 /* RootViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				4AB3F9AC17076A8700B19B78 /* Main.storyboard */,
 			);
 			name = "Resources-iPhone";
 			sourceTree = "<group>";
@@ -278,6 +319,7 @@
 				AC3E70A0125282900066AF56 /* ModalViewController~ipad.xib in Resources */,
 				AC3E70A1125282900066AF56 /* RootViewController~ipad.xib in Resources */,
 				55F884E3142A0B47008F9C14 /* MainWindow~ipad.xib in Resources */,
+				4AB3F9AD17076A8700B19B78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +342,12 @@
 				AC169B11124FD5FC008F43EA /* ModalViewController.m in Sources */,
 				AC169CD6124FF423008F43EA /* ClothTransition.m in Sources */,
 				AC3E6FAA125264130066AF56 /* DoorsTransition.m in Sources */,
+				4AB3F9AB170768C200B19B78 /* HMGLTransitionSegue.m in Sources */,
+				4AB3F9B01707728F00B19B78 /* HMGLDoorsTransitionSegue.m in Sources */,
+				4AB3F9B3170772D000B19B78 /* HMGLClothTransitionSegue.m in Sources */,
+				4AB3F9B61707733500B19B78 /* HMGLRotateTransitionSegue.m in Sources */,
+				4AB3F9B91707736900B19B78 /* HMGLFlipTransitionSegue.m in Sources */,
+				4AB3F9BC1707739500B19B78 /* HMGLSwitch3DTransitionSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +359,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HMGLTransitions_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "HMGLTransitions-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = HMGLTransitions;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,12 +379,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HMGLTransitions_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "HMGLTransitions-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = HMGLTransitions;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

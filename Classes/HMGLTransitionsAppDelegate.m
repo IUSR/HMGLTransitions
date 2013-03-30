@@ -30,11 +30,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    RootViewController *newViewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-    self.window.rootViewController = newViewController;
-    [newViewController release];
-
-    [window makeKeyAndVisible];
+//    RootViewController *newViewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+//    self.window.rootViewController = newViewController;
+//
+//    [window makeKeyAndVisible];
 
     return YES;
 }
@@ -86,13 +85,5 @@
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
 }
-
-
-- (void)dealloc {
-
-    [window release];
-    [super dealloc];
-}
-
 
 @end

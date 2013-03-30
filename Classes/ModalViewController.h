@@ -24,10 +24,10 @@
 
 @interface ModalViewController : UIViewController {
 
-	id <ModalControllerDelegate> delegate;
+	id <ModalControllerDelegate> __unsafe_unretained delegate;
 }
 
-@property (nonatomic, assign) id <ModalControllerDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id <ModalControllerDelegate> delegate;
 
 - (IBAction)closeButtonPressed;
 

@@ -71,7 +71,7 @@
 	NSTimeInterval lastTime, thisTime, calcTime;
 	
 	// delegate
-	id <HMGLTransitionViewDelegate> delegate;
+	id <HMGLTransitionViewDelegate> __unsafe_unretained delegate;
 	
 	// frames frame
 	int framesCount;
@@ -82,8 +82,8 @@
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
-@property (nonatomic, retain) HMGLTransition *transition;
-@property (nonatomic, assign) id <HMGLTransitionViewDelegate> delegate;
+@property (nonatomic, strong) HMGLTransition *transition;
+@property (nonatomic, unsafe_unretained) id <HMGLTransitionViewDelegate> delegate;
 
 - (void)startAnimation;
 - (void)stopAnimation;

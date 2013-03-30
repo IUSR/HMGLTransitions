@@ -26,7 +26,8 @@ typedef enum {
 	HMGLTransitionTypeNone,
 	HMGLTransitionTypeViewTransition,
 	HMGLTransitionTypeControllerPresentation,
-	HMGLTransitionTypeControllerDismission
+	HMGLTransitionTypeControllerDismission,
+    HMGLTransitionTypeSegue
 }
 HMGLTransitionType;
 
@@ -60,5 +61,8 @@ HMGLTransitionType;
 // UIViewController transitions
 - (void)presentModalViewController:(UIViewController*)modalViewController onViewController:(UIViewController*)viewController;
 - (void)dismissModalViewController:(UIViewController*)modalViewController;
+
+// Segue transitions
+- (void)transitFrom:(UIViewController *)sourceViewController toViewController:(UIViewController *)destViewController;
 
 @end

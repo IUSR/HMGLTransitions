@@ -30,7 +30,7 @@
 
 @interface RootViewController()
 
-@property (nonatomic, retain) HMGLTransition *transition;
+@property (nonatomic, strong) HMGLTransition *transition;
 
 @end
 
@@ -47,20 +47,20 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
 	
-		Switch3DTransition *t1 = [[[Switch3DTransition alloc] init] autorelease];
+		Switch3DTransition *t1 = [[Switch3DTransition alloc] init];
 		t1.transitionType = Switch3DTransitionLeft;
 		
-		FlipTransition *t2 = [[[FlipTransition alloc] init] autorelease];
+		FlipTransition *t2 = [[FlipTransition alloc] init];
 		t2.transitionType = FlipTransitionRight;		
 		
 		transitionsArray = [[NSArray alloc] initWithObjects:
-							[[[Switch3DTransition alloc] init] autorelease],
+							[[Switch3DTransition alloc] init],
 							t1,
-							[[[ClothTransition alloc] init] autorelease],							
-							[[[FlipTransition alloc] init] autorelease],
+							[[ClothTransition alloc] init],							
+							[[FlipTransition alloc] init],
 							t2,
-							[[[RotateTransition alloc] init] autorelease],
-							[[[DoorsTransition alloc] init] autorelease],
+							[[RotateTransition alloc] init],
+							[[DoorsTransition alloc] init],
 							nil];
 		
 		transitionsNamesArray = [[NSArray alloc] initWithObjects:
@@ -162,7 +162,6 @@
 	
 	[[HMGLTransitionManager sharedTransitionManager] presentModalViewController:newController onViewController:self];
 	
-	[newController release];
 }
 
 #pragma mark -
@@ -181,7 +180,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     if ([transitionsArray objectAtIndex:indexPath.row] == transition) {
@@ -224,14 +223,5 @@
 }
 
 
-- (void)dealloc {
-	[transitionsArray release];
-	[transition release];
-	
-	[view1 release];
-	[view2 release];
-	
-    [super dealloc];
-}
 
 @end
