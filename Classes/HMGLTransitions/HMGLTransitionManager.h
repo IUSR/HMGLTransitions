@@ -63,6 +63,7 @@ HMGLTransitionType;
 - (void)dismissModalViewController:(UIViewController*)modalViewController;
 
 // Segue transitions
-- (void)transitFrom:(UIViewController *)sourceViewController toViewController:(UIViewController *)destViewController;
+- (void)transitFrom:(UIViewController *)sourceViewController toViewController:(UIViewController *)destViewController
+         onComplete:(void (^)(BOOL completed, UIViewController *sourceViewController, UIViewController *destViewController))completion;
 
 @end

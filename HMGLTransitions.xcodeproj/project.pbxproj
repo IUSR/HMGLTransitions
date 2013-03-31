@@ -22,6 +22,12 @@
 		4AB3F9B61707733500B19B78 /* HMGLRotateTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9B51707733400B19B78 /* HMGLRotateTransitionSegue.m */; };
 		4AB3F9B91707736900B19B78 /* HMGLFlipTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9B81707736900B19B78 /* HMGLFlipTransitionSegue.m */; };
 		4AB3F9BC1707739500B19B78 /* HMGLSwitch3DTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3F9BB1707739400B19B78 /* HMGLSwitch3DTransitionSegue.m */; };
+		4ADD057D1708A944007B5098 /* HMGLTransitionPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD057C1708A944007B5098 /* HMGLTransitionPushSegue.m */; };
+		4ADD05801708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD057F1708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.m */; };
+		4ADD05831708AD07007B5098 /* HMGLClothTransitionPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD05821708AD07007B5098 /* HMGLClothTransitionPushSegue.m */; };
+		4ADD05861708AD24007B5098 /* HMGLRotateTransitionPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD05851708AD24007B5098 /* HMGLRotateTransitionPushSegue.m */; };
+		4ADD05891708AD48007B5098 /* HMGLFlipTransitionPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD05881708AD48007B5098 /* HMGLFlipTransitionPushSegue.m */; };
+		4ADD058C1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD058B1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.m */; };
 		55F884E3142A0B47008F9C14 /* MainWindow~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F884E2142A0B47008F9C14 /* MainWindow~ipad.xib */; };
 		AC13782B124ECCD800D21E3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC13782A124ECCD800D21E3F /* QuartzCore.framework */; };
 		AC137831124ECCDC00D21E3F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC137830124ECCDC00D21E3F /* OpenGLES.framework */; };
@@ -69,6 +75,18 @@
 		4AB3F9B81707736900B19B78 /* HMGLFlipTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLFlipTransitionSegue.m; sourceTree = "<group>"; };
 		4AB3F9BA1707739400B19B78 /* HMGLSwitch3DTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLSwitch3DTransitionSegue.h; sourceTree = "<group>"; };
 		4AB3F9BB1707739400B19B78 /* HMGLSwitch3DTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLSwitch3DTransitionSegue.m; sourceTree = "<group>"; };
+		4ADD057B1708A944007B5098 /* HMGLTransitionPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLTransitionPushSegue.h; sourceTree = "<group>"; };
+		4ADD057C1708A944007B5098 /* HMGLTransitionPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLTransitionPushSegue.m; sourceTree = "<group>"; };
+		4ADD057E1708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLDoorsTransitionPushSegue.h; sourceTree = "<group>"; };
+		4ADD057F1708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLDoorsTransitionPushSegue.m; sourceTree = "<group>"; };
+		4ADD05811708AD06007B5098 /* HMGLClothTransitionPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLClothTransitionPushSegue.h; sourceTree = "<group>"; };
+		4ADD05821708AD07007B5098 /* HMGLClothTransitionPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLClothTransitionPushSegue.m; sourceTree = "<group>"; };
+		4ADD05841708AD24007B5098 /* HMGLRotateTransitionPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLRotateTransitionPushSegue.h; sourceTree = "<group>"; };
+		4ADD05851708AD24007B5098 /* HMGLRotateTransitionPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLRotateTransitionPushSegue.m; sourceTree = "<group>"; };
+		4ADD05871708AD48007B5098 /* HMGLFlipTransitionPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLFlipTransitionPushSegue.h; sourceTree = "<group>"; };
+		4ADD05881708AD48007B5098 /* HMGLFlipTransitionPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLFlipTransitionPushSegue.m; sourceTree = "<group>"; };
+		4ADD058A1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGLSwitch3DTransitionPushSegue.h; sourceTree = "<group>"; };
+		4ADD058B1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGLSwitch3DTransitionPushSegue.m; sourceTree = "<group>"; };
 		55F884E2142A0B47008F9C14 /* MainWindow~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow~ipad.xib"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HMGLTransitions-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HMGLTransitions-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AC13782A124ECCD800D21E3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -186,6 +204,16 @@
 				4AB3F9B81707736900B19B78 /* HMGLFlipTransitionSegue.m */,
 				4AB3F9BA1707739400B19B78 /* HMGLSwitch3DTransitionSegue.h */,
 				4AB3F9BB1707739400B19B78 /* HMGLSwitch3DTransitionSegue.m */,
+				4ADD057E1708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.h */,
+				4ADD057F1708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.m */,
+				4ADD05811708AD06007B5098 /* HMGLClothTransitionPushSegue.h */,
+				4ADD05821708AD07007B5098 /* HMGLClothTransitionPushSegue.m */,
+				4ADD05841708AD24007B5098 /* HMGLRotateTransitionPushSegue.h */,
+				4ADD05851708AD24007B5098 /* HMGLRotateTransitionPushSegue.m */,
+				4ADD05871708AD48007B5098 /* HMGLFlipTransitionPushSegue.h */,
+				4ADD05881708AD48007B5098 /* HMGLFlipTransitionPushSegue.m */,
+				4ADD058A1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.h */,
+				4ADD058B1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.m */,
 			);
 			name = Segues;
 			sourceTree = "<group>";
@@ -203,6 +231,8 @@
 				AC13783E124ECD2B00D21E3F /* HMGLTransitionManager.m */,
 				4AB3F9A9170768C200B19B78 /* HMGLTransitionSegue.h */,
 				4AB3F9AA170768C200B19B78 /* HMGLTransitionSegue.m */,
+				4ADD057B1708A944007B5098 /* HMGLTransitionPushSegue.h */,
+				4ADD057C1708A944007B5098 /* HMGLTransitionPushSegue.m */,
 			);
 			path = HMGLTransitions;
 			sourceTree = "<group>";
@@ -348,6 +378,12 @@
 				4AB3F9B61707733500B19B78 /* HMGLRotateTransitionSegue.m in Sources */,
 				4AB3F9B91707736900B19B78 /* HMGLFlipTransitionSegue.m in Sources */,
 				4AB3F9BC1707739500B19B78 /* HMGLSwitch3DTransitionSegue.m in Sources */,
+				4ADD057D1708A944007B5098 /* HMGLTransitionPushSegue.m in Sources */,
+				4ADD05801708ACD4007B5098 /* HMGLDoorsTransitionPushSegue.m in Sources */,
+				4ADD05831708AD07007B5098 /* HMGLClothTransitionPushSegue.m in Sources */,
+				4ADD05861708AD24007B5098 /* HMGLRotateTransitionPushSegue.m in Sources */,
+				4ADD05891708AD48007B5098 /* HMGLFlipTransitionPushSegue.m in Sources */,
+				4ADD058C1708AD6C007B5098 /* HMGLSwitch3DTransitionPushSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,9 @@
 
 #import "HMGLTransitionManager.h"
 
-@interface HMGLTransitionManager()
+@interface HMGLTransitionManager() {
+    void (^_completionHandler)(BOOL, UIViewController *, UIViewController *);
+}
 
 @property (nonatomic, strong) HMGLTransitionView *transitionView;
 @property (nonatomic, strong) UIView *containerView;
@@ -191,10 +193,12 @@ static HMGLTransitionManager *sharedTransitionManager = nil;
 }
 
 - (void)transitFrom:(UIViewController *)sourceViewController
-        toViewController:(UIViewController *)destViewController {
+        toViewController:(UIViewController *)destViewController
+         onComplete:(void (^)(BOOL, UIViewController *, UIViewController *))completion {
     transitionType = HMGLTransitionTypeSegue;
     self.oldController = sourceViewController;
     self.currentController = destViewController;
+    _completionHandler = completion;
     [self switchViewControllers];
 }
 
@@ -212,8 +216,7 @@ static HMGLTransitionManager *sharedTransitionManager = nil;
 		[oldController dismissModalViewControllerAnimated:NO];
 	}
     else if (transitionType == HMGLTransitionTypeSegue) {
-        [[self.oldController view] removeFromSuperview];
-        [[UIApplication sharedApplication].delegate.window setRootViewController:self.currentController];
+        _completionHandler(YES, self.oldController, self.currentController);
     }
 
 	// transition type
