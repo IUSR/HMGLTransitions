@@ -21,7 +21,7 @@
                                                               return;
                                                           }
                                                           [sourceViewController.view  removeFromSuperview];
-                                                          [sourceViewController.navigationController pushViewController:destViewController animated:YES];
+                                                          [sourceViewController.navigationController pushViewController:destViewController animated:NO];
                                                       }
      ];
 }
